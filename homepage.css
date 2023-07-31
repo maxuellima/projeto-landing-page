@@ -10,38 +10,49 @@
     --marromescuro: #5b4a28;
     --cinza: #84848c;
     --bege: #d3c4b4;
-    --fonte1: font-family: 'Courier New', Courier, monospace;
+    --fonte1: font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+
     display: flex;
     background-color: var(--preto);
-    height: 12vh;
+    height: 16vh;
     width: 100vw;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    border: white solid 2px;
+}
+
+header #caixa-da-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 16vh;
 }
 
 header #logo-upfor {
-    height: 100%;
-    width: 14%;
-    border: greenyellow 2px solid;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 120px;
+    cursor: pointer;
+    /* border: greenyellow 2px solid; */
 }
 
 header nav {
-    border: solid lightcoral 2px;
+    /* border: solid lightcoral 2px; */
     height: 100%;
-    width: 80%;
-    overflow: hidden;
-    justify-content: center;
+    width: 80vw;
+    /* overflow: hidden; */
+    justify-content: space space-around;
     align-items: center;
 
 }
 
 header nav .menu-hamburguer {
     display: flex;
-    border: lightgreen solid 2px;
+    /* border: lightgreen solid 2px; */
     height: 3rem;
     width: 3rem;
     flex-direction: column;
@@ -59,22 +70,1138 @@ header nav .menu-hamburguer .bar {
     height: 20px;
     background-color: var(--bege);
     border-radius: 12px;
-    
+
 }
 
 header nav ul {
     display: flex;
-    width: 90vw;
-    height: 12vh;
-    margin-right: 2px;
-    justify-content: space-around;
+    width: 80vw;
+    height: 16vh;
+    justify-content: space-between;
     align-items: center;
-    /* gap: 15px; */
+    gap: 1vw;
 }
 
 header nav ul li {
-    color: var(--marromclaro);
+    color: var(--bege);
     list-style-type: none;
-    font-size: 0.8em;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+header nav ul a {
+    color: var(--bege);
+    list-style-type: none;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+#botaologin {
+    height: 5vh;
+    width: 7vw;
+    background-color: var(--bege);
+    color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    border: 0;
+    border-radius: 0.5em;
+}
+
+#botaologin:hover {
+    background-color: var(--marromclaro);
+}
+
+#botaologin:active {
+    background-color: var(--preto);
+    color: var(--bege);
+}
+
+main .inicio-da-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 70vh;
+    width: 100vw;
+}
+
+.inicio-da-main aside {
+    background-color: var(--preto);
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 50vw;
+
+}
+
+.inicio-da-main h2 {
+    color: var(--branco);
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inicio-da-main #div-da-imagem {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    height: 70vh;
+    background-color: var(--preto);
+}
+
+.inicio-da-main #div-da-imagem #imagem-main {
+    width: 95%;
+    height: 95%;
+    border-radius: 0.5em;
+}
+
+.parte2-da-main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parte2-da-main .lado-direito {
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte2-da-main .lado-direito #div-direita-1 {
+    margin-top: 1em;
+    height: 30%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.parte2-da-main .lado-direito #div-direita-1 #titulo-parte-2 {
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--marromescuro);
+    text-align: center;
+}
+
+.parte2-da-main .lado-direito #div-do-paragrafo {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.lado-direito #div-do-paragrafo .paragrafo {
+    font-size: 1.7em;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: var(--marromescuro);
+}
+
+.parte2-da-main .lado-direito #fim-do-aside {
+    background-color: var(--marromescuro);
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lado-direito #fim-do-aside .paragrafo-final {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--bege);
+}
+
+.parte2-da-main .lado-esquerdo {
+    display: flex;
+    height: 60vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.parte2-da-main .lado-esquerdo #primeiro-video {
+
+    border-radius: 3em;
+    box-shadow: 0.5em 0.3em 1em var(--marromescuro);
+}
+
+#bloco-de-cards {
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    width: 98vw;
+    padding: 10px;
+    margin-top: 2vh;
+}
+
+#bloco-de-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+    width: 20vw;
+    overflow: hidden;
+
+}
+
+#bloco-de-cards .card .imagens-do-bloco {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1em;
+
+}
+
+.paragrafo-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--preto);
+}
+
+.secao-credito {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-credito #div-credito {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-credito #div-credito h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: var(--marromescuro);
+}
+
+.secao-credito .div-menor-taxa {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-credito .div-menor-taxa p {
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    color: var(--marromclaro);
+}
+
+.continuar-credito {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--marromclaro);
+    box-shadow: 5px 5px 10px var(--preto);
+    border-radius: 2em;
+
+}
+
+.continuar-credito #lado-esquerdo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continuar-credito #lado-esquerdo img {
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+    border-radius: 2em;
+    box-shadow: 2px 2px 10px var(--marromclaro);
+    overflow-y: hidden;
+
+}
+
+.continuar-credito #lado-direito {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.continuar-credito #lado-direito .subtitulo-credito {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.continuar-credito #lado-direito .segundo-subtitulo {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+.subtitulo-credito h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: var(--preto);
+}
+
+.segundo-subtitulo h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: var(--preto);
+}
+
+
+
+.secao-do-form {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    box-shadow: 5px 5px 10px var(--preto);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--preto); */
+
+}
+
+.form-image img {
+    width: 12em;
+}
+
+.secao-do-form #div-do-form {
+    width: 50%;
+    /* background-color: #b08f4e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cabecalho {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-login {
+    display: flex;
+    align-items: center;
+}
+
+#botao-login button {
+    border: none;
+    background-color: var(--marromescuro);
+    padding: 0.4em 1em;
+    border-radius: 10px;
+}
+
+#botao-login button:hover {
+    background-color: var(--preto);
+}
+
+#botao-login button a {
+    text-decoration: none;
+    font: 500;
+    color: beige;
+}
+
+#cabecalho h1::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 0.3em;
+    background-color: #1F1F24;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1em;
+}
+
+#input-box label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+#input-box input {
+    position: relative;
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px var(--preto);
+}
+
+#input-box input:hover {
+    background-color: var(--bege);
+}
+
+#input-box input:focus-visible {
+    outline: 1px solid var(--preto);
+}
+
+#input-box label,
+.gender-title h6 {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+#input-box input::placeholder {
+    color: var(--preto);
+}
+
+.genero-inputs .gender-title {
+    padding-left: 2em;
+    display: flex;
+
+}
+
+.genero-inputs .gender-title h6 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.6em;
+    padding: 0 0 0.5em;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.3em;
+}
+
+.gender-input label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.botao-continuar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-continuar button {
+    width: 50%;
+    margin-top: 2.5em;
+    border: none;
+    background-color: var(--preto);
+    padding: 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-continuar button:hover {
+    background-color: var(--bege);
+}
+
+.botao-continuar button a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--bege);
+}
+
+.botao-continuar button a:hover {
+    color: var(--preto);
+}
+
+footer {
+    height: 20vh;
+    background-color: var(--preto);
+    width: 100vw;
+    display: flex;
+}
+
+footer #div-da-logo {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2em;
+}
+
+footer #div-da-logo img {
+    height: 16vh;
+}
+
+footer .div-das-redes {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+footer .div-das-redes img {
+    height: 6vh;
+    padding: 2em;
+}
+
+footer .div-direitos-autorais {
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 2em;
+}
+
+footer .div-direitos-autorais h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--bege);
+    text-align: center;
+}
+
+footer .div-direitos-autorais p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--bege);
+    text-align: center;
+}
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+
+    /* tablets */
+    header {
+        padding: 0;
+        position: fixed;
+    }
+
+    header nav ul a {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    main .inicio-da-main {
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .inicio-da-main aside {
+        width: 100%;
+        height: 40vh;
+        align-items: end;
+    }
+
+    .inicio-da-main aside h2 {
+        font-size: 4.1em;
+    }
+
+    .parte2-da-main {
+        flex-wrap: wrap;
+    }
+
+    .parte2-da-main .lado-direito #div-direita-1 #titulo-parte-2 {
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--marromescuro);
+        text-align: center;
+    }
+
+    .parte2-da-main .lado-direito #div-do-paragrafo {
+        height: 40%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .lado-direito #div-do-paragrafo .paragrafo {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .lado-direito #fim-do-aside {
+        width: 50%;
+    }
+
+    .lado-direito #fim-do-aside .paragrafo-final {
+        font-size: 1em;
+    }
+
+    .lado-esquerdo #primeiro-video {
+        width: 100%;
+    }
+
+    .inicio-da-main #div-da-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inicio-da-main #div-da-imagem #imagem-main {
+        width: 80%;
+    }
+
+    .secao-credito {
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .secao-credito #div-credito {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao-credito #div-credito h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .secao-credito .div-menor-taxa {
+        height: 40%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao-credito .div-menor-taxa p {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .continuar-credito {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .continuar-credito #lado-esquerdo {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .continuar-credito #lado-esquerdo img {
+        height: 56vh;
+
+    }
+
+    .continuar-credito #lado-direito {
+        display: flex;
+        width: 50%;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .continuar-credito #lado-direito .subtitulo-credito {
+        height: 50%;
+    }
+
+    .continuar-credito #lado-direito .segundo-subtitulo {
+        height: 50%;
+    }
+
+    .subtitulo-credito h2 {
+        font-size: 2em;
+    }
+
+    .segundo-subtitulo h3 {
+        font-size: 1.5em;
+    }
+
+    .secao-do-form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 150vh;
+        width: 100%;
+    }
+
+    .form-image {
+        height: 30vh;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-image img {
+        width: 12em;
+    }
+
+    #cabecalho {
+        width: 80%;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #input-group {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.2em;
+    }
+
+    #input-box {
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 0.1em; */
+    }
+
+    #input-box label {
+        font-size: 0.9em;
+    }
+
+    #input-box input {
+        margin: 0.2em 0;
+        padding: 0.5em 1.2em;
+    }
+
+    .genero-inputs .gender-title {
+        padding-left: 0em;
+        display: flex;
+
+    }
+
+    .genero-inputs .gender-title h6 {
+        font-size: 0.8em;
+    }
+
+    .gender-group {
+        margin-top: 0.3em;
+        padding: 0 0 0.5em;
+    }
+
+    .gender-input {
+        display: flex;
+        align-items: center;
+        padding-right: 0.3em;
+    }
+
+    .gender-input input {
+        margin-right: 0.3em;
+    }
+
+    .gender-input label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: var(--preto);
+    }
+
+    .botao-continuar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao-continuar button {
+        width: 30%;
+        margin-top: 1.5em;
+        padding: 0.3em;
+    }
+
+    .botao-continuar button a {
+        font-size: 1.5em;
+    }
+
+    /* footer{
+        height: 20vh;
+        background-color: var(--preto);
+        width: 100vw;
+        display: flex;
+    }
+    footer #div-da-logo{
+        width: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 2em;
+    } */
+    /* footer #div-da-logo img{
+        height: 16vh;
+    } */
+    /* footer .div-das-redes{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+    } */
+    footer .div-das-redes img {
+        height: 4vh;
+        padding: 1em;
+    }
+
+    footer .div-direitos-autorais {
+        width: 40%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 1em;
+    }
+
+    footer .div-direitos-autorais h3 {
+        font-size: 1em;
+    }
+
+    footer .div-direitos-autorais p {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* celulares */
+    header nav ul a {
+        color: var(--bege);
+        list-style-type: none;
+        font-size: 0.6em;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+    }
+
+    header #logo-upfor {
+        height: 12vh;
+    }
+
+    #botaologin {
+        font-size: 1em;
+    }
+
+    main .inicio-da-main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .inicio-da-main aside {
+        width: 100%;
+        height: 25vh;
+        align-items: start;
+    }
+
+    .inicio-da-main aside h2 {
+        font-size: 3.1em;
+    }
+
+    .parte2-da-main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .parte2-da-main .lado-direito {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .parte2-da-main .lado-direito #div-direita-1 {
+        margin-top: 0em;
+        height: 30%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .parte2-da-main .lado-direito #div-direita-1 #titulo-parte-2 {
+        font-size: 1.9em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--marromescuro);
+        text-align: center;
+    }
+
+    .parte2-da-main .lado-direito #div-do-paragrafo {
+        height: 50%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .lado-direito #div-do-paragrafo .paragrafo {
+        font-size: 1.3em;
+    }
+
+    .parte2-da-main .lado-direito #fim-do-aside {
+
+        height: 20vh;
+        width: 90%;
+        border-radius: 10px;
+
+    }
+
+    .lado-direito #fim-do-aside .paragrafo-final {
+        font-size: 1.1em;
+    }
+
+    .parte2-da-main .lado-esquerdo {
+        display: flex;
+        height: 60vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parte2-da-main .lado-esquerdo #primeiro-video {
+
+        width: 90vw;
+    }
+    .secao-credito {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-left: 1em;
+        padding-right: 1em; */
+    }
+    
+    .secao-credito #div-credito {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secao-credito #div-credito h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .secao-credito .div-menor-taxa {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secao-credito .div-menor-taxa p {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .continuar-credito {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        
+    }
+    
+    .continuar-credito #lado-esquerdo {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .continuar-credito #lado-esquerdo img {
+        height: 56vh;
+           
+    }
+    .continuar-credito #lado-direito{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .continuar-credito #lado-direito .subtitulo-credito{
+        height: 50%;
+    }
+    .continuar-credito #lado-direito .segundo-subtitulo{
+        height: 50%;
+    }
+    .subtitulo-credito h2{
+        font-size: 1.4em;
+    }
+    .segundo-subtitulo h3{
+        font-size: 1.2em;
+    }
+    .secao-do-form {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        margin-top: 2em;
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        margin-bottom: 1em;
+    }
+    .form-image {
+        display: none;
+    }
+    #input-group{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #input-box{
+        display: flex;
+        align-items: center;
+    }
+    #cabecalho{
+        padding-top: 1em;
+        width: 100vw;
+    }
+    #cabecalho h1::after{
+        display: none;
+    }
+    .gender-input label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6em;
+        font-weight: 600;
+        color: var(--preto);
+    }
+    .botao-continuar button {
+        width: 30%;
+        margin-top: 1.5em;
+        padding: 0.3em;
+    }
+
+    .botao-continuar button a {
+        font-size: 1.5em;
+    }
+    /* footer{
+        height: 20vh;
+        background-color: var(--preto);
+        width: 100vw;
+        display: flex;
+    } */
+    footer #div-da-logo{
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 1em;
+    }
+    footer #div-da-logo img{
+        height: 12vh;
+    }
+    footer .div-das-redes{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .div-das-redes img {
+        height: 3vh;
+        padding: 0.8em;
+    }
+
+    footer .div-direitos-autorais {
+        width: 35%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 0.3em;
+    }
+
+    footer .div-direitos-autorais h3 {
+        font-size: 0.6em;
+    }
+
+    footer .div-direitos-autorais p {
+        font-size: 0.4em;
+    }
+
+    
 }
