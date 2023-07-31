@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PerifaNoCentro</title>
     <link rel="stylesheet" href="homepage.css" type="text/css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div><img id="logo-upfor" src="/imagensSite/upFour.png" alt="logo-da-empresa"></div>
+        <div id="caixa-da-logo">
+            <img id="logo-upfor" src="/imagensSite/upFour.png" alt="logo-da-empresa">
+        </div>
         <nav>
             <div id="menu-hamburguer" class="menu-hamburguer">
                 <span class="bar"></span>
@@ -18,21 +21,205 @@
                 <span class="bar"></span>
             </div>
             <ul id="menu">
-                <li><a href="#COLOCARLINK"></a>Início</li>
-                <li><a href="#COLOCARLINK"></a>Orientação financeira</li>
-                <li><a href="#COLOCARLINK"></a>Crédito para o seu negócio</li>
-                <li><a href="#COLOCARLINK"></a>Quem somos</li>
+                <a href="#sandra-gil">
+                    <li>Início</li>
+                </a>
+                <a href="#sandra-gil">
+                    <li>O que fazemos</li>
+                </a>
+                <a href="#credito">
+                    <li>Crédito para o seu negócio</li>
+                </a>
+                <a href="#cadastre-se">
+                    <li>Cadastre-se</li>
+                </a>
+                <a href="#cadastre-se">
+                    <li><button id="botaologin">Entrar</button></li>
+                </a>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h3>Periferia no Centro</h3>
+        <section class="inicio-da-main">
+            <aside>
+                <h2>Periferia no Centro</h2>
+            </aside>
+            <div id="div-da-imagem">
+                <img id="imagem-main" src="/imagensSite/trabalh0-junto.jpg" alt="">
+            </div>
         </section>
+        <section class="parte2-da-main">
+            <aside class="lado-direito">
+                <div id="div-direita-1">
+                    <h3 id="titulo-parte-2">
+                        Sandra e Gil realizando seus sonhos. <a name="sandra-gil"></a>
+                    </h3>
+                </div>
+                <div id="div-do-paragrafo">
+                    <p class="paragrafo">
+                        Sandra e Gil abriram sua primeira loja de roupas no Recife. Mais um sonho que se tornou
+                        realidade. </p>
+                </div>
+                <div id="fim-do-aside">
+                    <p class="paragrafo-final">
+                        A upfor se orgulha de fazer parte dessa história. Saiba mais!
+                    </p>
+                </div>
+            </aside>
+            <aside class="lado-esquerdo">
+                <div>
+                    <video id="primeiro-video" src="/videosSite/juntos-com-você.mp4" autoplay loop muted>Seu navegador
+                        não suporta esse tipo de arquivo</video>
+                </div>
+            </aside>
+        </section>
+        <section id="bloco-de-cards">
+            <div class="card">
+                <img class="imagens-do-bloco" src="./imagensSite/negócios/padaria.jpg" alt="padaria do josé">
+                <p class="paragrafo-imagem">Marcos abriu a sua tão sonhada padaria e agora tem seu próprio negócio.</p>
+            </div>
+            <div class="card">
+                <img class="imagens-do-bloco" src="./imagensSite/negócios/quitanda.jpg" alt="padaria do josé">
+                <p class="paragrafo-imagem">Marilurdes abriu a sua venda e pode vender os seus produtos naturais.</p>
+            </div>
+            <div class="card">
+                <img class="imagens-do-bloco" src="./imagensSite/negócios/salao-beleza.jpg" alt="padaria do josé">
+                <p class="paragrafo-imagem">Alyne construiu seu salão do zero e pode atender suas clientes com mais
+                    conforto.</p>
+            </div>
+            <div class="card">
+                <img class="imagens-do-bloco" src="./imagensSite/negócios/pet shop.png" alt="padaria do josé">
+                <p class="paragrafo-imagem">Izabely juntou sua paixão por animais a sua profissão e abriu um petshop.
+                </p>
+            </div>
+        </section>
+        <section class="secao-credito">
+            <div id="div-credito">
+                <h2>
+                    Conheça as formas de Crédito
+                    <a name="credito"></a>
+                </h2>
+            </div>
+            <div class="div-menor-taxa">
+                <p><i>A menor taxa de juros entre todos os bancos! </i></p>
+            </div>
+        </section>
+        <section class="continuar-credito">
+            <div id="lado-esquerdo">
+                <img src="./imagensSite/acesse-qualquer-lugar.jpg" alt="mulher negra">
+            </div>
+            <div id="lado-direito">
+                <div class="subtitulo-credito">
+                    <h2>
+                        Empréstimos na hora para realizar o seu sonho e o de quem você ama!
+                    </h2>
+                </div>
+                <div class="segundo-subtitulo">
+                    <h3>
+                        Empréstimos de até 100 mil reais para você abrir o seu negócio. Traga-nos sua ideia que a
+                        tornamos em realidade.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="secao-do-form">
+            <div class="form-image">
+                <img src="./imagensSite/form-image.svg" alt="imagem ">
 
+            </div>
+            <div id="div-do-form">
+                <form action="#">
+                    <div id="cabecalho">
+                        <div id="titulo-cabecalho">
+                            <h1>Cadastre-se <a name="cadastre-se"></a></h1>
+                        </div>
+                        <div id="botao-login">
+                            <button><a href="#">Entrar</a></button>
+                        </div>
+
+                    </div>
+                    <div id="input-group">
+                        <div id="input-box">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Insira o seu nome completo..."
+                                required>
+                        </div>
+                        <div id="input-box">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" id="e-mail" name="e-mail" placeholder="Digite o seu e-mail..." required>
+
+                        </div>
+                        <div id="input-box">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço..."
+                                required>
+
+                        </div>
+                        <div id="input-box">
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                        <div id="input-box">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required>
+                        </div>
+                        <div id="input-box">
+                            <label for="senha">Confirme sua senha</label>
+                            <input type="password" id="confirme-senha"
+                                name="confirme-senha" placeholder="Confirme sua senha..." required>
+                        </div>
+
+                    </div>
+                    <div class="genero-inputs">
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="others" name="gender">
+                                <label for="other">Outros</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="none" name="gender">
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao-continuar">
+                        <button onclick="enviar(event)"><a>Continuar</a></button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div id="div-da-logo">
+            <img src="./imagensSite/upFour.png" alt="logo-upfor">
+        </div>
+        <div class="div-das-redes">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imagensSite/instagram-logo (1).svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./imagensSite/face-logo.svg" alt="facebook"></a>
+            <a href="https://twitter.com/home" target="_blank"><img src="./imagensSite/twitter-logo.svg" alt="twitter"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./imagensSite/linkedin-logo.svg" alt="linkedin"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="./imagensSite/e-mail-logo.svg" alt="e-mail"></a>
+        </div>
+        <div class="div-direitos-autorais">
+            <h3>Todos os direitos reservados</h3>
+            <p>Endereço: Rua das periferias, 157. Recife, Pernambuco - Brasil. CEP: 50000-420</p>
+
+        </div>
+
+
+
 
     </footer>
 
